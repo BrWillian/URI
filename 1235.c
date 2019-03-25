@@ -1,8 +1,13 @@
+<<<<<<< HEAD
  #include <stdio.h>
+=======
+#include <stdio.h>
+>>>>>>> 2c029e642eee06c64127c4df78813a500532324a
 #include <string.h>
 
 int main()
 {
+<<<<<<< HEAD
     int N, length, half;
     char frase[102], frase1[101];
 
@@ -26,4 +31,26 @@ int main()
     }
 
     return 0;
+=======
+    char frase [101];
+
+    int n;
+
+    scanf("%d",&n);
+
+    for(int k=0; k<n; k++)
+    {
+        scanf(" %[^\n]",frase);
+
+        for(int i=strlen(frase)/2-1; i>=0; i--)
+        {
+            printf("%c", frase[i]);
+        }
+        for(int j=strlen(frase); j>=strlen(frase)/2; j--)
+        {
+            printf("%c", frase[j]);
+        }
+        printf("\n");
+    }
+>>>>>>> 2c029e642eee06c64127c4df78813a500532324a
 }
